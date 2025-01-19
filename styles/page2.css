@@ -1,0 +1,193 @@
+
+.page2{
+    background-color: rgb(1, 0, 35);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+ }
+
+ .circle3{
+    height: 110%;
+    width: 70%;
+    background: radial-gradient(closest-side ,rgba(245, 245, 245, 0.37),rgba(4, 43, 68,0.4),rgb(1,0,35));
+    position: absolute;
+    top: 80px;
+    right: 40%;
+ }
+ .circle4{
+    height: 900px;
+    width: 500px;
+    background: radial-gradient(closest-side ,rgba(189, 186, 17, 0.21),rgba(4, 43, 68,0.3) 50%,rgb(1,0,35));
+    position: absolute;
+    top: -20px;
+    right: -15%; 
+}
+
+.page2-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.language{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 200;
+    margin-top: 20%;
+    margin-left: 95px;
+    row-gap: 25px;
+}
+.container-html, .container-js, .container-react, .container-cpp, .container-python{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    border-radius: 10px;
+    /* row-gap: 30px;
+    padding: 50px 0; */
+}
+
+.html-progress-bar, .js-progress-bar, .react-progress-bar, .cpp-progress-bar, .python-progress-bar{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : conic-gradient(#f99f51 3.6deg, #6c62fe5c 0deg);
+}
+
+.html-progress-bar::before, .python-progress-bar::before,.js-progress-bar::before, .react-progress-bar::before, .cpp-progress-bar::before{
+    position: absolute;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    content: '';
+    background-color: rgb(1, 0, 35);
+}
+
+.html-progress-value, .python-progress-value, .js-progress-value, .react-progress-value, .cpp-progress-value{
+    position: relative;
+    font-size: 20px;
+    font-weight: 450;
+    color: #f99f51;
+    font-family: montserrat;
+}
+
+.html-text, .js-text, .react-text, .cpp-text, .python-text{
+    font-size: 15px;
+    font-weight: 450;
+    color: white;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+.page2-text{
+
+    margin-right: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    margin-top: 20%;
+    row-gap: 25px;
+}
+.page2-text p{
+    font-size: 20px;
+}
+
+.exp1 {
+    padding: 15px 15px 15px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(0);
+    cursor: pointer;
+    transition: backdrop-filter 0.3s ease-in-out;
+    margin-bottom: 10px ;
+  }
+  
+  .exp1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    transform: skewX(-30deg);
+    transition: 0.5s;
+  }
+  
+  .exp1:hover::before {
+    left: 100%;
+  }
+  
+  .exp1:hover {
+    backdrop-filter: blur(10px);
+  }
+
+.heading1, .heading3  {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color:#fef1e4;
+    margin-bottom: 10px;
+}
+
+.heading2, .heading4{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.exp1 section, .exp2 section{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.deco1{
+    color: #6C62FE;
+}
+
+.exp2 {
+    padding: 15px 15px 15px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(0);
+    cursor: pointer;
+    transition: backdrop-filter 0.3s ease-in-out;
+  }
+  
+  .exp2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    transform: skewX(-30deg);
+    transition: 0.5s;
+  }
+  
+  .exp2:hover::before {
+    left: 100%;
+  }
+  
+  .exp2:hover {
+    backdrop-filter: blur(10px);
+  }
